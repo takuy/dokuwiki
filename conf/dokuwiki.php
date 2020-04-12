@@ -98,6 +98,7 @@ $conf['mediarevisions'] = 1;             //enable/disable media revisions
 $conf['refcheck']    = 1;                //check for references before deleting media files
 $conf['gdlib']       = 2;                //the GDlib version (0, 1 or 2) 2 tries to autodetect
 $conf['im_convert']  = '';               //path to ImageMagicks convert (will be used instead of GD)
+$conf['no_resize'] = '';                 //extensions to not resize on the server
 $conf['jpg_quality'] = '70';             //quality of compression when scaling jpg images (0-100)
 $conf['fetchsize']   = 0;                //maximum size (bytes) fetch.php may download from extern, disabled by default
 

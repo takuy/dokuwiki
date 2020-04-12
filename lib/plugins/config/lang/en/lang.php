@@ -135,6 +135,7 @@ $lang['mediarevisions'] = 'Enable Mediarevisions?';
 $lang['refcheck']    = 'Check if a media file is still in use before deleting it';
 $lang['gdlib']       = 'GD Lib version';
 $lang['im_convert']  = 'Path to ImageMagick\'s convert tool';
+$lang['no_resize'] = 'Specify image extensions that are not resized on the server; use "all" to disable server-side resizing for all image types';
 $lang['jpg_quality'] = 'JPG compression quality (0-100)';
 $lang['fetchsize']   = 'Maximum size (bytes) fetch.php may download from external URLs, eg. to cache and resize external images.';
 

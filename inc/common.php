@@ -571,6 +571,20 @@ function exportlink($id = '', $format = 'raw', $urlParameters = '', $abs = false
 
     return $xlink;
 }
+/**
+ * 
+ * Check to see if an image can be resized by the server
+ * 
+ * @param string  $ext   a file extension to check against
+ * @param string  $id   an optional image file ID or URL if $ext is empty
+ * 
+ * @return string
+ */
+    function canResize($ext, $id = null) {
+        global $conf;
+        if($id) list($ext) = mimetype($id, false);
+        return !(in_array("all", $conf["no_resize"]) || in_array($ext, $conf["no_resize"]));
+    }
 
 /**
  * Build a link to a media file
